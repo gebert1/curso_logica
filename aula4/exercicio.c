@@ -9,9 +9,11 @@ int main()
 	int i;
 	
 	printf("Nome:");
-	scanf("%s", nome);
+	fgets(string, 100, nome);
+	string[strlen(nome) - 1] = '\0';
 	printf("Sobrenome:");
-	scanf("%s", sobrenome);
+	fgets(string, 100, sobrenome);
+	string[strlen(sobrenome) - 1] = '\0';
 	
 	strcat(nome_completo, nome);
 	strcat(nome_completo, " ");
